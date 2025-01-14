@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+h1 {
+    font-size: 4rem;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    font-size: 1.25rem;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.curve {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: rgb(24, 24, 24);
+    transform: translate(85%, 60%);
+}
+
+.curve::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: rgb(0, 116, 211);
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 209px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: rgb(24, 24, 24);
+}
+
+.wave-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-blue svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 209px;
+    transform: rotateY(180deg);
+}
+
+.wave-blue .shape-fill {
+    fill: rgb(0, 116, 211);
+}
+
+.wave-red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-red svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 209px;
+    transform: rotateY(180deg);
+}
+
+.wave-red .shape-fill {
+    fill: rgb(196, 58, 58);
+}
+
+.wave-green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-green svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 209px;
+    transform: rotateY(180deg);
+}
+
+.wave-green .shape-fill {
+    fill: rgb(66, 173, 52);
+}
+
+.wave-purple {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-purple svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 209px;
+    transform: rotateY(180deg);
+}
+
+.wave-purple .shape-fill {
+    fill: rgb(90, 51, 161);
+}
+
+.red {
+    background-color: rgb(196, 58, 58)
+}
+
+.blue {
+    background-color: rgb(0, 116, 211)
+}
+
+.green {
+    background-color: rgb(66, 173, 52)
+}
+
+.purple {
+    background-color: rgb(90, 51, 161)
+}
